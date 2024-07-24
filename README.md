@@ -35,7 +35,7 @@ Our training dataset comprised roughly 75 images of 7 people, along with 25 imag
 
 We trained on Google Colab, making use of the T4 GPU to speed up training. Ultralytics handled plotting of loss curves and some other cool plots that helped us understand how our model was training. 
 
-The following confusion matrix showed us who the model struggled with and succeeded with. For instance, I was routinely confused with my friend Justin, whereas the model was confidently correct for detecting Parth.
+The following confusion matrix showed us who the model struggled with and succeeded with. For instance, I was often not recognized and just predicted to be background, whereas the model was confidently correct for detecting Parth.
 
 ![confusion_matrix_normalized](https://github.com/user-attachments/assets/cce932e7-f05f-49c8-9627-6f6226087bab)
 
