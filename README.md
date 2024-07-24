@@ -35,15 +35,15 @@ Our training dataset comprised roughly 75 images of 7 people, along with 25 imag
 
 We trained on Google Colab, making use of the T4 GPU to speed up training. Ultralytics handled plotting of loss curves and some other cool plots that helped us understand how our model was training. 
 
+The following confusion matrix showed us who the model struggled with and succeeded with. For instance, I was routinely confused with my friend Justin, whereas the model was confidently correct for detecting Parth.
+
 ![confusion_matrix_normalized](https://github.com/user-attachments/assets/cce932e7-f05f-49c8-9627-6f6226087bab)
 
-This confusion matrix showed us who the model struggled with and succeeded with. For instance, I was routinely confused with my friend Justin, whereas the model was confidently correct for detecting Parth.
+In the figure below, the top right diagram was fascinating: it showed the distribution of bounding boxes for each of us. As can be seen, Parth, the bright green boxes, are generally the biggest ones, which confirms that Parth had many selfies within the dataset. We found that when testing the model, whenever we stood too close to the webcam, it would likely predict us to be Parth.
 
 ![labels](https://github.com/user-attachments/assets/a75607fc-0234-451a-b477-eefb40d48895)
 
-The top right diagram was fascinating: it showed the distribution of bounding boxes for each of us. As can be seen, Parth, the bright green boxes, are generally the biggest ones, which confirms that Parth had many selfies within the dataset. We found that when testing the model, whenever we stood too close to the webcam, it would likely predict us to be Parth. 
-
-Lastly, here are some training/validation loss graphs along with mean average precision, in which the model ends up getting 0.51.
+Lastly, here are some training/validation loss graphs along with mean average precision, in which the model ends up getting 0.51. YOLOv8 is trained with multiple loss terms, including the classification loss (is the person in the box actually predicted correctly?) and the box loss (how well does the box bound the person?). We can see that during training, the model's training loss is still decreasing at the end of training, but the validation loss is plateauing, so we felt it was a good place to stop training.
 
 ![results](https://github.com/user-attachments/assets/3a68da6d-2b9b-4a20-8053-be78930599c1)
 
@@ -80,6 +80,6 @@ The following were integral resources that helped me learn about YOLO and can he
 
 ## Appendix
 
-In case you were interested the presentation our team gave to the rest of the Data Science Union about this project, here is a [link](https://docs.google.com/presentation/d/1V6c1hgeQ_YZdw_v9RJhdqv4A2rU4jl6nGjs9W0B9lj4/edit?usp=sharing)
+In case you were interested in seeing the presentation our team gave to the rest of the Data Science Union about this project, here is a [link](https://docs.google.com/presentation/d/1V6c1hgeQ_YZdw_v9RJhdqv4A2rU4jl6nGjs9W0B9lj4/edit?usp=sharing)
 
 
