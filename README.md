@@ -15,7 +15,7 @@ Ever wanted to build a model that could detect you or your friends within an ima
 
 ![Screenshot 2024-05-22 at 9 20 03 AM](https://github.com/user-attachments/assets/901759b1-4893-4e28-8d4b-ae30f38e21ea)
 
-Above: Some fails and successes of our model on a portion of our testing set. It sometimes fails to recognize someone is in the picture or misidentifies them——more on this later :) 
+*Above: Some fails and successes of our model on a portion of our testing set. It sometimes fails to recognize someone is in the picture or misidentifies them——more on this later*
 
 This repository will serve as a description of our project but also a demo/guide if you want to build a similar project, whether it is detecting your friends or anything else. Let's get started!
 
