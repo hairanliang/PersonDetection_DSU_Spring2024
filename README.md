@@ -58,13 +58,11 @@ Lastly, here are some training/validation loss graphs along with mean average pr
 
 This was one of my first times using external libraries like UltraLytics, and it was fun seeing how I could build an end-to-end project within 10 weeks by making use of amazing machine learning resources. 
 
-My team and I found that while YOLOv8 did a decent job of detecting us sometimes, it struggled a lot in various cases, like when there were large groups of people in the picture or if was a back or side-profile of us instead of front-on. In the end, we realized it all comes back down to the model's data. 
+My team and I found that while YOLOv8 did a decent job of detecting us sometimes, it struggled a lot in various cases, like when there were large groups of people in the picture or if it was a back or side-profile of us instead of front-on. In the end, we realized it all comes back down to the model's data——data quality is so important! So often we focus on searching for ideal hyperparameters or choosing the perfect model, but we neglect our data, which is the backbone of the entire process. 
 
-Data quality is so important! So often we focus on searching for ideal hyperparameters or choosing the perfect model, but we neglect our data, which is the backbone of the entire process. 
+For object detection in particular, it's important that there is enough data, and it's likely that our 700 photos was not enough for the model to confidently detect us. In the future, if we had unlimited time, we would have used 10,000 photos or more.
 
-For object detection in particular, it's important that there is enough data, and it's likely that our 700 photos was not enough for our model to confidently detect us, and in the future and if we had unlimited time, we would have used 10,000 photos or more.
-
-Using just YOLO may not be the best architecture for differentating complex features like human faces and bodies, which can vary wildly from fashion choices and different poses. We hypothesize that a model with YOLO as the backbone, and a specialized FaceDetection model on top would work even better for our problem, and highly encourage anyone to try such an architecture out and let us know :) 
+Lastly, YOLOv8 may not be the best architecture for differentating complex features like human faces and bodies, which can vary wildly from fashion choices and different poses. We hypothesize that a model with YOLOv8 as the backbone to perform the detection, and a specialized model responsible for classifying faces would work even better for our problem, and highly encourage anyone to try such an architecture out and let us know how it goes :) 
 
 ## Acknowledgements
 
