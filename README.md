@@ -31,7 +31,7 @@ We experimented with Ultralytic's various pretrained models, and we found the YO
 
 ## Training
 
-Our training dataset comprised roughly 75 images of 7 people, along with 25 images of the same 7 people for validation/test. This amounted to a training set of roughly 700 images. Our final model was trained on all 700 images.
+Our training dataset comprised roughly 75 images of 7 people, along with 25 images of the same 7 people for validation/test. This amounted to a training set of roughly 700 images. Our final model was trained on all 700 images for 30 epochs.
 
 We trained on Google Colab, making use of the T4 GPU to speed up training. Ultralytics handled plotting of loss curves and some other cool plots that helped us understand how our model was training. 
 
