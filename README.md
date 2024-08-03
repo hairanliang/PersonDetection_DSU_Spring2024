@@ -25,13 +25,13 @@ We used [CVAT](https://www.cvat.ai/) to upload photos of ourselves and label the
 
 ## Model 
 
-We used the YOLOv8 architecture, which is state-of-the-art for many computer vision tasks, including object detection. However, in the past, YOLOv8 has not been used for unique person detection, so we decided to see if we could reasonably train a YOLO model using lots of labeled data of each of us.
+We used the YOLOv8 architecture, which is state-of-the-art for many computer vision tasks, including object detection. However, in the past, YOLOv8 has not been used for unique person detection, so we decided to see if we could reasonably train a YOLO model using lots of labeled data of each of us. 
 
 We experimented with Ultralytic's various pretrained models, and we found the YOLOv8s to be the best when considering accuracy and ability for real-time detection. 
 
 ## Training
 
-Our training dataset comprised roughly 75 images of 7 people, along with 25 images of the same 7 people for validation/test. This amounted to a training set of roughly 700 images. Our final model was trained on all 700 images for 30 epochs.
+Our training dataset comprised roughly 75 images of 7 people, along with 25 images of the same 7 people for validation/test. This amounted to a training set of roughly 700 images. Our final model was trained on all 700 images for 30 epochs. We found that training a YOLO model from scratch would lead to quite poor performance, and we had much more success when finetuning the pretrained models (YOLO is pretrained on the COCO dataset). 
 
 We trained on Google Colab, making use of the T4 GPU to speed up training. Ultralytics handled plotting of loss curves and some other cool plots that helped us understand how our model was training. 
 
