@@ -21,7 +21,7 @@ This repository will serve as a description of our project but also a demo/guide
 
 ## Dataset and Labels
 
-We used [CVAT](https://www.cvat.ai/) to upload photos of ourselves and label them. After manually labelling our bounding boxes, CVAT also provided us with the box coordinates and labels, that we could later use as input to the model we used for training, YOLOv8 from [UltraLytics](https://github.com/ultralytics/ultralytics). 
+We used [CVAT](https://www.cvat.ai/) to upload photos of ourselves and label them. After manually labelling our bounding boxes, CVAT also provided us with the box coordinates and labels, that we could later use as input to the model we used for training, YOLOv8 from [UltraLytics](https://github.com/ultralytics/ultralytics). For privacy, I did not include a folder of all the pictures we used for training.
 
 ## Model 
 
