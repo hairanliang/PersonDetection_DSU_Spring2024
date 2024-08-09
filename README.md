@@ -80,4 +80,6 @@ The following were integral resources that helped me learn about YOLO and can he
 
 In case you were interested in seeing the presentation our team gave to the rest of the Data Science Union about this project, here is a [link](https://docs.google.com/presentation/d/1V6c1hgeQ_YZdw_v9RJhdqv4A2rU4jl6nGjs9W0B9lj4/edit?usp=sharing)
 
+And, here is the Streamlit code we forked and used, hosted on Emily's GitHub page: [Streamlit Code](https://github.com/emilygong-zhuying/dsu-object-detection)
+
 
